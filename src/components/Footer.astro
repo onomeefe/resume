@@ -1,0 +1,10 @@
+---
+let viewCount;
+const response = await fetch('https://wwjcx7tyxrbjmbkf3vc3teo3mu0qrvhq.lambda-url.ca-central-1.on.aws/');
+const data = await response.json();
+viewCount = data;
+---
+
+<footer>
+  <p>View count: *{viewCount}*</p>
+</footer>
